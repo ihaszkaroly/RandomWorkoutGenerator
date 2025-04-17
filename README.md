@@ -1,0 +1,2 @@
+# RandomWorkoutGenerator
+ F# project
