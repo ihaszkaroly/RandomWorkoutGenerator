@@ -46,33 +46,35 @@ let view (model: Model) (dispatch: Msg -> unit) =
             style.height (length.vh 100)
             style.fontFamily "Segoe UI"
         ]
+        prop.children [
 
-        Html.h1 [
-            prop.text "Random Workout Generator"
-            prop.style [ style.marginBottom 20 ]
-        ]
-
-        Html.button [
-            prop.text "Generate Workout"
-            prop.style [
-                style.padding (10, 20)
-                style.fontSize 18
-                style.cursor.pointer
-                style.marginBottom 30
+            Html.h1 [
+                prop.text "Random Workout Generator"
+                prop.style [ style.marginBottom 20 ]
             ]
-            prop.onClick (fun _ -> dispatch GenerateWorkout)
-        ]
 
-        match model.CurrentWorkout with
-        | Some workout ->
-            Html.div [
-                Html.h2 workout.Name
-                Html.p workout.Reps
+            Html.button [
+                prop.text "Generate Workout"
+                prop.style [
+                    style.padding (10, 20)
+                    style.fontSize 18
+                    style.cursor.pointer
+                    style.marginBottom 30
+                ]
+                prop.onClick (fun _ -> dispatch GenerateWorkout)
             ]
-        | None ->
-            Html.p "Click the button to get your workout!"
+
+            match model.CurrentWorkout with
+            | Some workout ->
+                Html.div [
+                    Html.h2 workout.Name
+                    Html.p workout.Reps
+                ]
+            | None ->
+                Html.p "Click the button to get your workout!"
+        ]
     ]
 
 Program.mkProgram init update view
-|> Program.withReact "root"
+|> Program.withReactBatched "root"
 |> Program.run
