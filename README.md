@@ -8,7 +8,8 @@ This project was created to add spontaneity to daily workouts. Instead of follow
 
 ## Live Demo
 
-[Try it live here](https://github.com/ihaszkaroly/RandomWorkoutGenerator.git)
+[Click here to run the app](https://ihaszkaroly.github.io/RandomWorkoutGenerator/)
+
 
 *(Hosted via GitHub Pages and automatically deployed with each commit.)*
 
