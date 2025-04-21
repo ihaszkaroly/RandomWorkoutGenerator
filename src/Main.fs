@@ -17,14 +17,14 @@ type Msg =
     | GenerateWorkout
 
 let allWorkouts = [
-    { Name = "Push-ups"; Reps = "3 × 15" }
-    { Name = "Squats"; Reps = "4 × 20" }
-    { Name = "Burpees"; Reps = "3 × 10" }
-    { Name = "Plank"; Reps = "2 × 1 min" }
-    { Name = "Jumping Jacks"; Reps = "3 × 30" }
-    { Name = "Lunges"; Reps = "3 × 12 per leg" }
-    { Name = "Mountain Climbers"; Reps = "3 × 40" }
-    { Name = "High Knees"; Reps = "3 × 30 sec" }
+    { Name = "Push-ups"; Reps = "3 x 15" }
+    { Name = "Squats"; Reps = "4 x 20" }
+    { Name = "Burpees"; Reps = "3 x 10" }
+    { Name = "Plank"; Reps = "2 x 1 min" }
+    { Name = "Jumping Jacks"; Reps = "3 x 30" }
+    { Name = "Lunges"; Reps = "3 x 12 per leg" }
+    { Name = "Mountain Climbers"; Reps = "3 x 40" }
+    { Name = "High Knees"; Reps = "3 x 30 sec" }
 ]
 
 let init () = { CurrentWorkout = None }, Cmd.none

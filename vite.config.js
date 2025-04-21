@@ -8,3 +8,7 @@ export default defineConfig({
     outDir: "../dist",
   }
 })
+export default {
+    base: "RandomWorkoutGenerator",
+    plugins: [],
+};
