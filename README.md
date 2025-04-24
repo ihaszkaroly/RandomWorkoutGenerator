@@ -11,11 +11,9 @@ This project was created to add spontaneity to daily workouts. Instead of follow
 [Click here to run the app](https://ihaszkaroly.github.io/RandomWorkoutGenerator/)
 
 
-*(Hosted via GitHub Pages and automatically deployed with each commit.)*
-
 ## Screenshot
 
-![kép](https://github.com/user-attachments/assets/ac652db2-4596-4a5b-bfd7-e3769fb768e4)
+![kép](https://github.com/user-attachments/assets/7b9dd0c9-83ee-4165-b5c7-8b10ef875f25)
 
 
 ## How to Build and Run Locally
